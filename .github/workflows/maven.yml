@@ -36,7 +36,7 @@ jobs:
        # Step : Verify the application is running
     - name: Verify Application Health
       run: |
-            curl -s http://localhost:8080/actuator/health | grep UP
+            curl -s http://localhost:80/actuator/health | grep UP
 
     # Optional: Uploads the full dependency graph to GitHub to improve the quality of Dependabot alerts this repository can receive
     #- name: Update dependency graph
